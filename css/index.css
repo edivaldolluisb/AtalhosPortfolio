@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+#cabecalho, #intro, #projects{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 /*header*/
 
 #cabecalho {
@@ -14,7 +19,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
 }
 
 #cabecalho header {
@@ -27,4 +32,42 @@
 }
 #cabecalho header a{
     text-decoration:  none;
+}
+
+/*intro*/
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 5rem;*/
+    height: 91vh;
+}
+
+/*projects*/
+#projects{
+    margin-bottom: 5rem;
+}
+#projects > div{
+     display: flex;
+     flex-direction: row;
+     gap: 1rem;
+}
+
+.Projectimage{
+    height: 12rem;
+    width: 20rem;
+}
+.project_img1{
+    background-image: url("../images/santocoisas.png");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+.project_img2{
+    background-image: url("../images/santocoisas.png");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
 }
