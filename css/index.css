@@ -58,6 +58,7 @@
 .Projectimage{
     height: 12rem;
     width: 20rem;
+    position: relative;
 }
 .project_img1{
     background-image: url("../images/santocoisas.png");
@@ -70,4 +71,27 @@
     background-size: cover;
     background-repeat: none;
     background-position: center;
+}
+
+.project_description {
+    line-height: 21px;
+    height: calc(3 * 21px);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.649);
+}
+.project_description::after{
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 21px;
+    width: 75%;
+
+    background : linear-gradient(90deg, transparent, white);
+
+
 }
