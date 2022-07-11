@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -55,8 +54,12 @@
 
 #intro > div p:first-of-type{
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 900;
 }
+.lastword{
+    color: #00C6CF;
+}
+
 
 /*projects*/
 #projects{
