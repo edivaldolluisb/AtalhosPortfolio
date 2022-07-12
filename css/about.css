@@ -1,0 +1,33 @@
+
+
+#about div{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0 5rem;
+    margin-top: 10rem;
+}
+#about div p:last-of-type{
+
+    text-align: justify;
+}
+
+.atalho_text{
+    background-image: url(../images/15968714710_001539a511_k.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position:center ;
+    
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+/*team*/
+
+#team{
+    margin: 3rem 1rem 1rem; /*top, left and right, bottom*/
+}
