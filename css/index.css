@@ -66,12 +66,15 @@
 
     padding: 0.5rem 1rem;
     margin-bottom: 4rem;
-    position: relative;
+    position: relative; 
+    height: 50vh;
+    background-color: #8685EF;
     
 }
 #projects h2{
     margin-bottom: 2rem;
     font-size: 1.3rem;
+    margin-left: 3rem;
 }
 #projects > div{
      display: flex;
@@ -136,7 +139,7 @@
     height: 1rem;
     width: 75%;
 
-    background : linear-gradient(20deg, transparent, #83A4A4);
+    background : linear-gradient(20deg, transparent, #8685EF);
 
 }
 
@@ -145,8 +148,8 @@
 }
 .allprojets a{
     text-decoration: none;
-    color: #00C6CF;
-    font-weight: bold;
+    color: #fff;
+    
 }
 
 /*contact us*/
