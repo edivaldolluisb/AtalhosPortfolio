@@ -65,23 +65,25 @@
 #projects{
 
     padding: 0.5rem 1rem;
-
-    height: 50vh;
-
-    background-color: #83A4A4;
+    margin-bottom: 4rem;
+    position: relative; 
     
 }
 #projects h2{
     margin-bottom: 2rem;
+    font-size: 1.3rem;
 }
 #projects > div{
      display: flex;
-     flex-direction: row;
+     flex-direction: row ;
+     flex-wrap: wrap;
      justify-content: center;
      gap: 2rem;
 }
 .project h3{
     margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
     /*border-bottom: 2px solid #3B3B3B;*/
 }
 .project h3::after{
@@ -131,11 +133,20 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 21px;
+    height: 1rem;
     width: 75%;
 
     background : linear-gradient(20deg, transparent, #83A4A4);
 
+}
+
+.allprojets{
+    margin-top: 2rem;
+}
+.allprojets a{
+    text-decoration: none;
+    color: #00C6CF;
+    font-weight: bold;
 }
 
 
@@ -143,8 +154,11 @@
 
 footer{
 
+    position: relative;
+
     text-align: center;
     padding: 1rem;
+    margin-top: 1rem;
     border-top: 50% solid #3B3B3B;
     background-color: #83A4A4;
 }
