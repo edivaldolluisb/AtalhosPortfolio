@@ -8,7 +8,7 @@
     color: #3B3B3B;
 }
 
-#cabecalho, #intro{
+#cabecalho, #intro, #contactus{
     margin-right: 1rem;
     margin-left: 1rem;
 }
@@ -43,7 +43,7 @@
 
 /*intro*/
 
-#intro{
+#intro, #contactus{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -52,7 +52,7 @@
     height: 91vh;
 }
 
-#intro > div p:first-of-type{
+#intro > div p:first-of-type, #contactus div p:first-of-type{
     font-size: 2rem;
     font-weight: 900;
 }
@@ -96,7 +96,7 @@
 
 .Projectimage{
     height: 12rem;
-    width: 20rem;
+    width: 25rem;
     position: relative;
 
     /*projects image*/
@@ -147,6 +147,12 @@
     text-decoration: none;
     color: #00C6CF;
     font-weight: bold;
+}
+
+/*contact us*/
+
+#contactus{
+    flex-direction: row-reverse;
 }
 
 
