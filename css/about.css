@@ -33,14 +33,16 @@
 }
 
 #team h2{
-    margin: 3rem 1rem 1rem; /*top, left and right, bottom*/
+    margin: 7rem 5rem 1rem; /*top, left and right, bottom*/
+    font-weight: 600;
+    color: #00C6CF;
 }
 
 /*the team timeline*/
 .container {
     /* Used to position the left vertical line */
     position: relative;
-    margin: 5rem;
+    margin: 0 0 2rem 5rem;
 }
 
 .container__line {
