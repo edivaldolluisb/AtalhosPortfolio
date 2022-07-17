@@ -20,10 +20,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-position:center ;
-    
+    background-position: center;
+
     font-size: 8rem;
-    font-weight: 700;
+    font-weight: 700; max-width: max-content;
 }
 
 /*team*/
@@ -102,4 +102,31 @@
 .container__desc {
     /* Make it align with the title */
     margin-left: 48px;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 985px) {
+    #about div{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        margin-top: 6rem;
+    }
+
+}
+@media screen and (max-width: 560px) {
+    #about div{
+    padding: 0 2rem;
+    }
+
+    .atalho_text{
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width: 430px) {
+
+    .atalho_text{
+        font-size: 5rem;
+    }
 }
