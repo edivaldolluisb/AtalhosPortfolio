@@ -33,8 +33,15 @@
 }
 #cabecalho header a{
     text-decoration:  none;
+    padding: .3rem .5rem;
+    transition: background-color 1s;
 }
-
+#cabecalho header a:hover{
+    background-color: #00C6CF;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+}
 
 
 
@@ -42,6 +49,7 @@
 
 #intro, #contactus{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -159,13 +167,16 @@
  background-color: #83A4A4;
 
  min-height: 50vh;
+
+ padding-left: 1rem;
+ padding-right: 1rem;
 }
 #seeprojects p:first-of-type{
     font-size: 2rem;
     font-weight: bold;
 }
 #seeprojects p:last-of-type{
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 #seeprojects a{
     text-decoration: none;
@@ -192,18 +203,33 @@
 
 #contactus{
     flex-direction: row-reverse;
+    flex-wrap: wrap;
 }
 
 #contactus div p:last-of-type{
     margin-bottom: 2rem;
 }
+
+#contactus div {
+    display: flex;
+    flex-direction: column;
+}
 #contactus a{
     text-decoration: none;
+    text-align: center;
     background-color: #ffcf2d ;
     color: #3B3B3B;
 
+    
     padding: 0.5rem;
     border-radius: .2rem;
+
+    border: 3px solid #ffcf2d;
+    transition: background-color 1s;
+}
+#contactus a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #3B3B3B;
 }
 
 
