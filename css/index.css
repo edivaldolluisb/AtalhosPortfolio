@@ -133,7 +133,8 @@
     height: 91vh;
 }
 
-#intro>div p:first-of-type{
+#intro>div p:first-of-type,
+#contactus div p:first-of-type {
     font-size: 2rem;
     font-weight: 900;
 }
@@ -141,6 +142,8 @@
 .lastword {
     color: #00C6CF;
 }
+
+
 
 
 /*see projecrts */
@@ -256,8 +259,20 @@ footer address {
 /*media queries*/
 
 @media screen and (max-width: 730px) {
-    #intro>div p:first-of-type{
-    font-size: 2rem;
-    font-weight: 900;
+    #seeprojects p:first-of-type {
+        font-size: 1.7rem;
+        
+    }
+    #seeprojects p:last-of-type {
+        font-size: 1.4rem;
+    }
 }
+@media screen and (max-width: 475px) {
+    #seeprojects p:first-of-type {
+        font-size: 1.4rem;
+        
+    }
+    #seeprojects p:last-of-type {
+        font-size: 1.1rem;
+    }
 }
