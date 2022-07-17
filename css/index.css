@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,46 +9,53 @@
     color: #3B3B3B;
 }
 
-#cabecalho, #intro, #contactus{
+#cabecalho,
+#intro,
+#contactus {
     margin-right: 1rem;
     margin-left: 1rem;
 }
 
 /*header*/
 
-#cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media screen and (min-width: 550px) {
 
-    padding: 0.5rem 0;
-}
+    #cabecalho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-#cabecalho header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+        padding: 0.5rem 0;
+    }
 
-    width: 50%;
-    justify-content: space-evenly;
-}
-#cabecalho header a{
-    text-decoration:  none;
-    padding: .3rem .5rem;
-    transition: background-color 1s;
-}
-#cabecalho header a:hover{
-    background-color: #00C6CF;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 3px;
-}
+    #cabecalho header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    #cabecalho header a {
+        text-decoration: none;
+        padding: .3rem .5rem;
+        transition: background-color 1s;
+    }
+
+    #cabecalho header a:hover {
+        background-color: #00C6CF;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+}
 
 
 /*intro*/
 
-#intro, #contactus{
+#intro,
+#contactus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -57,44 +65,50 @@
     height: 91vh;
 }
 
-#intro > div p:first-of-type, #contactus div p:first-of-type{
+#intro>div p:first-of-type,
+#contactus div p:first-of-type {
     font-size: 2rem;
     font-weight: 900;
 }
-.lastword{
+
+.lastword {
     color: #00C6CF;
 }
 
 
 /*projects*/
-#projects{
+#projects {
 
     padding: 0.5rem 1rem;
     margin-bottom: 4rem;
-    position: relative; 
+    position: relative;
     height: 50vh;
     background-color: #8685EF;
-    
+
 }
-#projects h2{
+
+#projects h2 {
     margin-bottom: 2rem;
     font-size: 1.3rem;
     margin-left: 3rem;
 }
-#projects > div{
-     display: flex;
-     flex-direction: row ;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 2rem;
+
+#projects>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
-.project h3{
+
+.project h3 {
     margin-bottom: 1rem;
     font-size: 1rem;
     font-weight: normal;
     /*border-bottom: 2px solid #3B3B3B;*/
 }
-.project h3::after{
+
+.project h3::after {
     border-top: 2px solid #3B3B3B;
     display: block;
     position: relative;
@@ -102,7 +116,7 @@
     content: "";
 }
 
-.Projectimage{
+.Projectimage {
     height: 12rem;
     width: 25rem;
     position: relative;
@@ -112,10 +126,12 @@
     background-repeat: none;
     background-position: center;
 }
-.project_img1{
+
+.project_img1 {
     background-image: url("../images/santocoisas.png");
 }
-.project_img2{
+
+.project_img2 {
     background-image: url("../images/santocoisas2.png");
 }
 
@@ -132,10 +148,12 @@
 
     transition: height 1s;
 }
+
 .project_description:hover {
     height: 100%;
 }
-.project_description::after{
+
+.project_description::after {
     content: '';
 
     position: absolute;
@@ -144,43 +162,47 @@
     height: 1rem;
     width: 75%;
 
-    background : linear-gradient(20deg, transparent, #8685EF);
+    background: linear-gradient(20deg, transparent, #8685EF);
 
 }
 
-.allprojets{
+.allprojets {
     margin-top: 2rem;
 }
-.allprojets a{
+
+.allprojets a {
     text-decoration: none;
     color: #fff;
-    
+
 }
 
 /*see projecrts */
-#seeprojects{
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+#seeprojects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
- background-color: #83A4A4;
+    background-color: #83A4A4;
 
- min-height: 50vh;
+    min-height: 50vh;
 
- padding-left: 1rem;
- padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-#seeprojects p:first-of-type{
+
+#seeprojects p:first-of-type {
     font-size: 2rem;
     font-weight: bold;
 }
-#seeprojects p:last-of-type{
+
+#seeprojects p:last-of-type {
     font-size: 1.7rem;
 }
-#seeprojects a{
+
+#seeprojects a {
     text-decoration: none;
-    
+
     border: 3px solid #8685EF;
     background-color: #8685EF;
     color: #fff;
@@ -194,19 +216,19 @@
 
 /*link buttons*/
 
-#seeprojects a:hover{
+#seeprojects a:hover {
     background-color: rgb(255, 255, 255);
     color: #3B3B3B;
 }
 
 /*contact us*/
 
-#contactus{
+#contactus {
     flex-direction: row-reverse;
     flex-wrap: wrap;
 }
 
-#contactus div p:last-of-type{
+#contactus div p:last-of-type {
     margin-bottom: 2rem;
 }
 
@@ -214,20 +236,22 @@
     display: flex;
     flex-direction: column;
 }
-#contactus a{
+
+#contactus a {
     text-decoration: none;
     text-align: center;
-    background-color: #ffcf2d ;
+    background-color: #ffcf2d;
     color: #3B3B3B;
 
-    
+
     padding: 0.5rem;
     border-radius: .2rem;
 
     border: 3px solid #ffcf2d;
     transition: background-color 1s;
 }
-#contactus a:hover{
+
+#contactus a:hover {
     background-color: rgb(255, 255, 255);
     color: #3B3B3B;
 }
@@ -236,7 +260,7 @@
 
 /*footer*/
 
-footer{
+footer {
 
     position: relative;
 
@@ -246,9 +270,11 @@ footer{
     border-top: 50% solid #3B3B3B;
     background-color: #83A4A4;
 }
-footer address{
-    font-style:normal ;
+
+footer address {
+    font-style: normal;
 }
+
 /*footer::before{
     border-top: 1px solid #3B3B3B;
     display: block;
