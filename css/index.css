@@ -20,10 +20,12 @@
 
 @media screen and (min-width: 550px) {
 
-    
-    #close_menu, #open_menu {
-       display: none;
+
+    #close_menu,
+    #open_menu {
+        display: none;
     }
+
     #cabecalho {
         display: flex;
         flex-direction: row;
@@ -54,26 +56,30 @@
         border-radius: 3px;
     }
 }
+
 @media screen and (max-width: 550px) {
 
-    #cabecalho{
+    #cabecalho {
         margin-top: 1rem;
     }
 
     #cabecalho header {
 
-        height: 100%; /* 100% Full-height */
-        width: 0; /* 0 width - mudar isso com javascript */
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - mudar isso com javascript */
 
         display: flex;
         flex-direction: column;
         align-items: center;
 
         justify-content: flex-start;
-                
+
         background-color: #00C6CF;
         z-index: 1;
-        overflow-x: hidden; /*disable horizontal scroll*/
+        overflow-x: hidden;
+        /*disable horizontal scroll*/
         position: fixed;
         top: 0;
         bottom: 0;
@@ -86,6 +92,7 @@
     #cabecalho header a:first-of-type {
         margin-top: 7rem;
     }
+
     #cabecalho header a {
         text-decoration: none;
         text-align: center;
@@ -103,19 +110,22 @@
         color: #fff;
         font-weight: bold;
     }
-    #open_menu, #close_menu {
+
+    #open_menu,
+    #close_menu {
         position: absolute;
         top: 1.5rem;
         right: 2rem;
         cursor: pointer;
-        
+
     }
+
     #close_menu {
         font-size: 2rem;
         color: #fff;
         width: 2rem;
         border-radius: 50%;
-        
+
     }
 }
 
@@ -259,19 +269,28 @@ footer address {
 /*media queries*/
 
 @media screen and (max-width: 730px) {
+
+    #intro>div:last-of-type, #seeprojects,
+    #contactus > div:last-of-type {
+        text-align: center;
+    }
+
     #seeprojects p:first-of-type {
         font-size: 1.7rem;
-        
+
     }
+
     #seeprojects p:last-of-type {
         font-size: 1.4rem;
     }
 }
+
 @media screen and (max-width: 475px) {
     #seeprojects p:first-of-type {
         font-size: 1.4rem;
-        
+
     }
+
     #seeprojects p:last-of-type {
         font-size: 1.1rem;
     }
