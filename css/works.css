@@ -1,6 +1,25 @@
 *{
     box-sizing: border-box;
 }
+.quote {
+    padding: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    background-color: #3B3B3B;
+
+    margin-top: 9rem;
+    
+}
+.quote p{
+    color: #fff;
+}
+.quote q{
+    font-weight: normal;
+    color: #fff;
+
+    
+}
 
 .container{
     min-height: 100vh;
