@@ -16,28 +16,49 @@
     <div id="cabecalho">
         <h1>Atalho</h1>
         <header>
-            <a href="./index.html" class="ativo">Home</a><a href="#">Works</a><a href="./about.html">About</a><a href="#">Contact</a>
+            <a href="./index.html" class="ativo">Home</a><a href="#">Works</a><a href="./about.html">About</a><a
+                href="#">Contact</a>
         </header>
     </div>
-    
-    <div>
+
+    <div class="texto">
         <p>
-           Deixe aqui a sua mensagem &#x1F609;! 
+            Deixe aqui a sua mensagem &#x1F609;!
         </p>
     </div>
     <main>
         <form action="">
-            <input class="primeiro_nome" type="text" placeholder="O seu primeiro nome">
-            <input class="segundo_nome" type="text" placeholder="O seu último nome">
-            <input class="email" type="email" placeholder="O seu email">
+            <div>
+                <label for="primeiro_nome">Primeiro nome:</label>
+                <input class="primeiro_nome" id="primeiro_nome" type="text" placeholder="O seu primeiro nome">
+            </div>
 
-            <textarea class="menssagem" placeholder="Describe yourself here...">
+            <div>
+                <label for="segundo_nome">Segundo nome:</label>
+                <input class="segundo_nome" id="segundo_nome" type="text" placeholder="O seu último nome">
+            </div>
 
+            <div>
+                <label for="email">Email:</label>
+                <input class="email" id="email" type="email" placeholder="O seu email">
+            </div>
+
+            <div>
+
+                <label for="mensagem">Sua menssagem:</label>
+                <textarea class="menssagem" id="mensagem" placeholder="Describe yourself here...">
             </textarea>
+            </div>
+
 
             <button type="submit">Enviar</button>
         </form>
     </main>
+
+    <!-- footer -->
+    <footer>
+        <address>São Tomé, São Tomé e Principe | &copy;2020 Atalho </address>
+    </footer>
 
 
 </body>

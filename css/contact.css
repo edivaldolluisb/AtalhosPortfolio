@@ -1,54 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap');
 
-
-div:nth-child(2) {
+.texto {
     margin-top: 6rem;
 }
 
-div:nth-child(2) p {
+.texto p {
     text-align: center;
     font-weight: 600;
 }
 
-main form {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1rem;
-
-    margin: 3rem 5rem 1rem;
+main {
+    min-height: 70vh;
 }
 
-form input, button, textarea{
+main form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+
+    width: 80%;
+    margin: 3rem auto 1rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: .9em;
+    font-weight: 400;
+}
+
+form input,
+button,
+textarea {
+    width: 100%;
     padding: .3rem;
     border: none;
 
     border: 2px solid #3B3B3B;
     border-radius: 3px;
 }
-form input:focus, button:focus{
-   background-color: #3B3B3B;
-}
-.primeiro_nome{
-    grid-column-start: 1;
-    grid-column-end: 2;
 
-    grid-row-start: 1;
-    grid-row-end: 2;
+/*form input:focus, button:focus{
+   background-color: #3B3B3B;
+}*/
+form div:nth-child(1) {
+    flex: 40%;
 }
-.primeiro_nome{
-    grid-column-start: 2;
-    grid-column-end: 4;
+
+form div:nth-child(2) {
+    flex: 56%;
 }
-.email{
-    grid-column-start: 1;
-    grid-column-end: 4;
+
+form div:nth-child(3),
+form div:nth-child(4), button{
+    flex: 100%;
+    min-width: 100%;
 }
-.menssagem{
-    grid-column-start: 1;
-    grid-column-end: 4;
+
+.menssagem {
+    min-width: 100%;
 }
-button{
-    grid-column-start: 1;
-    grid-column-end: 4;
+
+button {
 
     cursor: pointer;
     background-color: #3B3B3B;
@@ -57,9 +73,32 @@ button{
 
     border: none;
 
+    /*override pading*/
+    padding: .5rem 0;
+
 }
-button:hover{
+
+button:hover {
     background-color: #00C6CF;
     color: #3B3B3B;
 
+}
+
+@media screen and (max-width: 530px) {
+
+    main form {
+
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (min-width: 110px) {
+
+    button {
+
+        width: 60%;
+        flex: 60%;
+    }
 }
