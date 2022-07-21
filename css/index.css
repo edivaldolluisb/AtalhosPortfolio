@@ -163,7 +163,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: #83A4A4;
+    background-color: #00C6CF;
 
     min-height: 50vh;
 
@@ -183,9 +183,9 @@
 #seeprojects a {
     text-decoration: none;
 
-    border: 3px solid #8685EF;
-    background-color: #8685EF;
-    color: #fff;
+    border: 3px solid #ffcf2d;
+    background-color: #ffcf2d;
+    color: #3B3B3B;
     padding: .3rem .5rem;
     border-radius: .2rem;
 
@@ -248,7 +248,7 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
     border-top: 50% solid #3B3B3B;
-    background-color: #83A4A4;
+    background-color: #00C6CF;
 }
 
 footer address {
