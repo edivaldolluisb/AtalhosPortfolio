@@ -33,7 +33,7 @@ label {
 }
 
 form input,
-button,
+form button,
 textarea {
     width: 100%;
     padding: .3rem;
@@ -55,7 +55,7 @@ form div:nth-child(2) {
 }
 
 form div:nth-child(3),
-form div:nth-child(4), button{
+form div:nth-child(4), form button{
     flex: 100%;
     min-width: 100%;
 }
@@ -64,7 +64,7 @@ form div:nth-child(4), button{
     min-width: 100%;
 }
 
-button {
+form button, #thanks button {
 
     cursor: pointer;
     background-color: #3B3B3B;
@@ -78,10 +78,48 @@ button {
 
 }
 
-button:hover {
+form button:hover, #thanks button:hover {
     background-color: #00C6CF;
     color: #3B3B3B;
 
+}
+
+
+/*thanks for the message*/
+#thanks{
+    position: fixed;
+
+    background-color: #00C6CF;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    bottom: 25%;
+
+    /* center items */
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 3px;
+
+    visibility: hidden;
+
+}
+#thanks img{
+    width: 20rem;
+}
+#thanks p{
+    color: #fff;
+}
+#thanks button{
+    max-width: fit-content;
+    padding: .5rem 2rem;
+    max-height: 3rem;
+    margin-bottom: 1rem;
+
+    border-radius: 3px;
+    
 }
 
 @media screen and (max-width: 530px) {
