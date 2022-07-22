@@ -79,8 +79,8 @@ form button, #thanks button {
 }
 
 form button:hover, #thanks button:hover {
-    background-color: #00C6CF;
-    color: #3B3B3B;
+    background-color: #3b3b3b80;
+    color: #fff;
 
 }
 

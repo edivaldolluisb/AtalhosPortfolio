@@ -2,15 +2,15 @@ var abrir_caixaDeagradecimento = window.document.querySelector("#enviarMenssagem
 var fechar_caixaDeagradecimento = window.document.querySelector("#fechar_caixaDeagradecimento");
 
 abrir_caixaDeagradecimento.addEventListener("click", () => {
-    
-    console.log("abrir")
+
+    //console.log("abrir")
     document.getElementById("thanks").style.visibility = "visible";
 });
 
-fechar_caixaDeagradecimento.addEventListener("click", fecharmenu);
+fechar_caixaDeagradecimento.addEventListener("click", fecharcaixa);
 
 
-function fecharmenu() {
+function fecharcaixa() {
     document.getElementById("thanks").style.visibility = "hidden";
-    console.log("fechar")
+    //console.log("fechar")
 }
