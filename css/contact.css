@@ -83,7 +83,14 @@ form button:hover, #thanks button:hover {
     color: #fff;
 
 }
+form input:focus, textarea:focus {
+    outline: 1px solid #00C6CF;
+    border: 2px solid #00C6CF;
+}
 
+::-moz-focus-inner{
+    border: 0;
+}
 
 /*thanks for the message*/
 #thanks{
