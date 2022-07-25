@@ -129,11 +129,26 @@ form input:focus, textarea:focus {
     
 }
 
+@media screen and (max-width: 640px) {
+/*thanks for the message*/
+#thanks{
+    width: 90%;
+    left: 5%;
+}
+
+}
+
 @media screen and (max-width: 530px) {
 
     main form {
 
         width: 90%;
+    }
+}
+@media screen and (max-width: 365px) {
+
+    #thanks img{
+        width: 15rem;
     }
 }
 
