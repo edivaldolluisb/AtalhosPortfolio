@@ -6,11 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
     <link rel="stylesheet" href="./css/index.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Atalho</title>
+
+    <style>
+        .disabled{
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,22 +26,25 @@
     <div id="cabecalho">
         <h1>Atalho</h1>
         <header id="menu">
-            <a href="" class="ativo">Home</a><a href="./works.html">Works</a><a
-                href="./about.html">About</a><a href="./contact.html">Contact</a>
+            <a href="" class="ativo">Home</a>
+            <a href="./works.html">Works</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="" class="disabled">PT</a>
             <i id="close_menu" class="fa-solid fa-xmark"></i>
 
         </header><img id="open_menu" src="./images/icons8-menu.svg" alt="menu">
     </div>
 
-    
+
     <!-- some intro words -->
     <section id="intro">
         <div><img src="./images/juicy-girl-working-at-home.gif" alt="working"></div>
-        <div>
+        <div class="citacoes_principais">
             <p>Let's think outside the <span class="lastword"> box.</span>
 
             </p>
-            <p>Let's make an impact together. <br> Avaible for opportunities schedule a chat.</p>
+            <p>Let's make an impact together. <br> Avaible for opportunities, we can schedule a chat.</p>
         </div>
 
     </section>
@@ -49,7 +60,7 @@
     <!--Contact us-->
     <section id="contactus">
         <div><img src="./images/sammy-service-support.gif" alt="working"></div>
-        <div>  
+        <div>
             <p>We can help you <br> bring your idea to <span class="lastword"> life.</span></p>
             <p>It only takes a few clicks and we are together</p>
             <a href="./contact.html">Get in touch</a>
@@ -57,13 +68,14 @@
 
     </section>
 
-    
+
     <!-- footer -->
     <footer>
         <address>São Tomé, São Tomé e Principe | &copy;2020 Atalho </address>
     </footer>
 
     <script src="./menu_js/menu.js"></script>
+    <script src="./js/lang/lang.js"></script>
 </body>
 
 </html>
